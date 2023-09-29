@@ -1,53 +1,71 @@
 /* Réinitialisation des styles par défaut */
 html, body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Style de l'en-tête (barre de navigation) */
-header {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
+/* Style de l'arrière-plan */
+body {
+  background-color: #f2f2f2; /* Gris clair pour l'arrière-plan */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Style de la barre de navigation */
+.header {
+  background-color: #000; /* Noir pour la barre de navigation */
+  color: #fff; /* Texte blanc */
+  padding: 10px 0;
+  text-align: center;
 }
 
-nav li {
-    display: inline;
-    margin: 0 15px;
+.header a {
+  text-decoration: none;
+  color: #fff; /* Texte blanc pour les liens */
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s; /* Transition de couleur au survol */
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
+.header a:hover {
+  color: #007bff; /* Bleu au survol des liens */
 }
 
-nav a:hover {
-    color: #007bff;
+/* Style du contenu principal */
+.content {
+  background-color: #fff; /* Fond blanc pour le contenu principal */
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #007bff; /* Bordure bleue autour du contenu principal */
 }
 
-/* Style des sections */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 2px solid #007bff;
-    margin-top: 20px;
+/* Style des sections SIO et UFA47 */
+.sio, .ufa47 {
+  background-color: #fff; /* Fond blanc pour les sections SIO et UFA47 */
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #007bff; /* Bordure bleue autour des sections SIO et UFA47 */
+}
+
+/* Style des projets */
+.project {
+  background-color: #fff; /* Fond blanc pour les projets */
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #007bff; /* Bordure bleue autour des projets */
 }
 
 /* Style du pied de page */
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.footer {
+  background-color: #000; /* Noir pour le pied de page */
+  color: #fff; /* Texte blanc */
+  text-align: center;
+  padding: 10px 0;
 }
 
-/* Ajoutez d'autres styles personnalisés selon vos besoins */
+/* Style des coordonnées */
+.coordonnee {
+  background-color: #fff; /* Fond blanc pour les coordonnées */
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #007bff; /* Bordure bleue autour des coordonnées */
+}
