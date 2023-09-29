@@ -1,66 +1,53 @@
 /* Réinitialisation des styles par défaut */
 html, body, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Style de l'arrière-plan */
-body {
-  background-color: #f2f2f2; /* Gris clair pour l'arrière-plan */
+/* Style de l'en-tête (barre de navigation) */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
 }
 
-/* Style de la barre de navigation */
-.header {
-  background-color: #000; /* Noir pour la barre de navigation */
-  color: #fff; /* Texte blanc */
-  padding: 10px 0;
-  text-align: center;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.header a {
-  text-decoration: none;
-  color: #fff; /* Texte blanc pour les liens */
-  margin: 0 15px;
+nav li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.header a:hover {
-  text-decoration: underline; /* Souligner les liens au survol */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-/* Style du contenu principal */
-.content {
-  background-color: #fff; /* Fond blanc pour le contenu principal */
-  padding: 20px;
-  margin-top: 20px;
+nav a:hover {
+    color: #007bff;
 }
 
-/* Style des sections SIO et UFA47 */
-.sio, .ufa47 {
-  background-color: #fff; /* Fond blanc pour les sections SIO et UFA47 */
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Style des projets */
-.project {
-  background-color: #fff; /* Fond blanc pour les projets */
-  padding: 20px;
-  margin-top: 20px;
-  border: 1px solid #ccc; /* Bordure grise autour des projets */
+/* Style des sections */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    margin-top: 20px;
 }
 
 /* Style du pied de page */
-.footer {
-  background-color: #000; /* Noir pour le pied de page */
-  color: #fff; /* Texte blanc */
-  text-align: center;
-  padding: 10px 0;
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
-/* Style des coordonnées */
-.coordonnee {
-  background-color: #fff; /* Fond blanc pour les coordonnées */
-  padding: 20px;
-  margin-top: 20px;
-}
+/* Ajoutez d'autres styles personnalisés selon vos besoins */
