@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 
-.header a, label, option  {
+.header a {
   text-decoration: none;
   color: #fff; /* Texte blanc pour les liens */
   margin: 0 15px;
@@ -26,10 +26,28 @@ body {
   transition: color 0.3s; /* Transition de couleur au survol */
 }
 
-.header a:hover label:hover option:hover {
+.header a:hover {
   color: #007bff; /* Bleu au survol des liens */
 }
+.header select {
+  background-color: #000; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  padding: 5px;
+  border: none; /* Retirez la bordure par défaut */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transition pour l'effet hover */
+}
 
+.header select:hover {
+  background-color: #007bff; /* Couleur de fond au survol */
+  color: #fff; /* Couleur du texte au survol */
+}
+
+/* Style des options de la liste déroulante */
+.header select option {
+  background-color: #000; /* Couleur de fond des options */
+  color: #fff; /* Couleur du texte des options */
+}
 /* Style du contenu principal */
 .content {
   background-color: #fff; /* Fond blanc pour le contenu principal */
