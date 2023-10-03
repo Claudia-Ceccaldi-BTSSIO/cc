@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 
-.header a {
+.header a, label, option  {
   text-decoration: none;
   color: #fff; /* Texte blanc pour les liens */
   margin: 0 15px;
@@ -26,7 +26,7 @@ body {
   transition: color 0.3s; /* Transition de couleur au survol */
 }
 
-.header a:hover {
+.header a:hover label:hover option:hover {
   color: #007bff; /* Bleu au survol des liens */
 }
 
