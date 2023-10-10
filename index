@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -13,60 +14,65 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+  </head>
+  <body>
     <div class="header">
       <a href="#">Qui suis-je ?</a>
-      <a href="#">BTS SIO</a>
+      <a href="#description-bts-sio">BTS SIO</a>
       <a href="src/claudiaCV.pdf" width="300" height="200">Parcours</a>
-      <a href="#">Projets</a>
+      <a href="">Projets professionnels</a>
+      <a href="projetPersoIndex.html">Projets Personnels</a>
       <a href="#">Veille</a>
-      <a href="#">Contact</a>
+      <a href="#contactez-moi">Contact</a>
     </div>
-    <div class="w3-container content">
-        <h1 class="w3-text-black">Qui suis-je ?</h1>
-        <p></p>
-        <h2>Compétences :</h2>
-        <ul>
-          <li>Développement web</li>
-          <li>Design d'interface utilisateur</li>
-          <li>...</li>
-        </ul>
-      </div>
+    <div class="logo-profil">
+      <img
+        class="img-profil"
+        src="images/profilprovisoire.jpeg"
+        alt="image profil"
+      />
+    </div>
+
     <div class="w3-container sio w3-card">
-        <h1 class="w3-text-black">Description BTS SIO option SLAM :</h1>
-        <p>
-            Le BTS SIO (Services Informatiques aux Organisations) avec l'option SLAM (Solutions Logicielles et Applications Métiers) est une formation de niveau Bac+2 axée sur les compétences en informatique et en développement de logiciels. 
-            Cette option se concentre sur la conception, le développement et la maintenance d'applications métiers spécialisées répondant aux besoins des entreprises et des organisations. 
-            Les étudiants apprennent à programmer dans une variété de langages tels que Java,Python, et bien d'autres, à concevoir des interfaces utilisateur conviviales, à gérer des bases de données et à résoudre des problèmes informatiques concrets. 
-            Ils acquièrent également des compétences en analyse des besoins des utilisateurs, en sécurité informatique et en gestion de projets. 
-            Le BTS SIO option SLAM prépare les étudiants à intégrer le monde professionnel en tant que développeurs d'applications métiers ou à poursuivre leurs études dans le domaine de l'informatique.
-        </p>
+      <h1 class="w3-text-black">Description BTS SIO option SLAM :</h1>
+      <p>
+        Le BTS SIO (Services Informatiques aux Organisations) avec l'option SLAM
+        (Solutions Logicielles et Applications Métiers) est une formation de
+        niveau Bac+2 axée sur les compétences en informatique et en
+        développement de logiciels.
+        <!-- Ajoutez ici le contenu de la description BTS SIO -->
+      </p>
     </div>
-    <div class="w3-container ufa47 w3-card">
-        <h1 class="w3-text-black">Etablissement UFA47</h1>
-        <p>
-            L'UFA47, fruit d'une collaboration entre les établissements de l'Enseignement Catholique L'Ermitage et l'Institution Sainte Catherine, en partenariat avec la DDEC47 et le CFA Aspect Aquitaine, propose une gamme variée de formations en alternance. 
-            Parmi elles, se trouvent 4 BTS et un Bachelor, dispensés sur les sites d'Agen, Villeneuve sur Lot et Marmande : BTS Support à l'Action Managériale, BTS Professions Immobilières, BTS Notariat, et BTS Service Informatique aux Organisations.
-            Cette initiative répond aux besoins locaux en offrant des parcours allant de la Seconde au BAC+5 dans le domaine numérique. 
-            L'alternance offre la possibilité d'apprendre tout en étant rémunéré, en acquérant des compétences à la fois académiques et professionnelles au sein des entreprises partenaires. Avec plus de deux décennies d'expérience, l'UFA47 jouit d'un ancrage solide et d'une équipe compétente, opérant depuis le cadre apaisant et historique du site de l'Ermitage à Agen.
-            </p>
+    <br />
+    <div class="logo-image">
+      <img
+        class="img-ufa"
+        srcset="https://ufa47.info/images/Logo-ufa47.png 1x"
+        src="https://ufa47.info/images/Logo-ufa47.png"
+        alt="UFA47"
+      />
     </div>
-    <div class="w3-container content">
-        <h1 class="w3-text-black">Projets</h1>
-        <div class=" project">
-          <img src="projet1.jpg" alt="Projet 1" />
-          <h2>Nom du Projet 1</h2>
-          <p>Description du Projet 1.</p>
-          <a href="lien_vers_projet1">Voir le projet</a>
-        </div>
-        <!-- Ajoutez d'autres projets de la même manière -->
-      </div>
-      <div class="w3-container Contact w3-padding">
-        <h1>Contactez moi :</h1>
-      </div>
-      <div class="coordonnee">Mes coordonnées</div>
-      
+    <div class="ufa47-content">
+      <p>
+        L'UFA47, fruit d'une collaboration entre les établissements de
+        l'Enseignement Catholique L'Ermitage et l'Institution Sainte Catherine,
+        en partenariat avec la DDEC47 et le CFA Aspect Aquitaine, propose une
+        gamme variée de formations en alternance.
+        <!-- Ajoutez ici le contenu de "Etablissement UFA47" -->
+      </p>
     </div>
+    <div class="w3-container Contact w3-padding">
+      <h1>Contactez moi</h1>
+    </div>
+    <div class="coordonnee">
+      <strong> Mes coordonnées</strong>
+      <p><em>mail : claudiaceccaldi@icloud.com </em></p>
+      <p><em>tél : 07 88 41 21 15</em></p>
+      <a href="https://www.linkedin.com/in/claudia-ceccaldi-a53077225/"
+        >Profil linkedIn</a
+      >
+    </div>
+
     <div class="footer"></div>
-  </head>
-  <body></body>
+  </body>
 </html>
