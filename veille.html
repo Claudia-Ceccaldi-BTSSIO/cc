@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veille Informatique - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      /* Réinitialisation de la mise en page et styles de base */
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        background-color: #444;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      article {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 20px;
+      }
+
+      .article-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .article-rating {
+        font-size: 18px;
+      }
+
+      .star {
+        color: #f4d03f;
+      }
+
+      .article-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      .article-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+    </style>
+    <header>
+      <h1>Veille Informatique</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html/#contactez-moi">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <!-- Article 1 -->
+        <article>
+          <div class="article-header">
+            <h2>Introduction à la Programmation en Python</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+              <span class="star">&#9734;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image1.jpg" alt="Image 1" class="article-image" />
+            <p>Texte explicatif de l'article 1.</p>
+          </div>
+          <a href="https://www.lebigdata.fr/python-langage">Lire la suite</a>
+        </article>
+
+        <!-- Article 2 -->
+        <article>
+          <div class="article-header">
+            <h2>
+              Les Principes Fondamentaux de la Programmation Orientée Objet
+              (POO)
+            </h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image2.jpg" alt="Image 2" class="article-image" />
+            <p>Texte explicatif de l'article 2.</p>
+          </div>
+          <a
+            href="https://www.linkedin.com/pulse/c-les-principes-fondamentaux-de-la-programmation-objet-ravaille/?originalSubdomain=fr"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 3 -->
+        <article>
+          <div class="article-header">
+            <h2>
+              Création d'un Site Web Simple en HTML et CSS avec l'aide de l'IA
+            </h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image3.jpg" alt="Image 3" class="article-image" />
+            <p>Texte explicatif de l'article 3.</p>
+          </div>
+          <a
+            href="https://www.futura-sciences.com/tech/questions-reponses/intelligence-artificielle-utiliser-chatgpt-creer-page-web-19343/"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 4 -->
+        <article>
+          <div class="article-header">
+            <h2>Comprendre les Bases des Bases de Données</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image4.jpg" alt="Image 4" class="article-image" />
+            <p>Texte explicatif de l'article 4.</p>
+          </div>
+          <a
+            href="https://www.silicon.fr/avis-expert/devops-de-bases-de-donnees-les-six-avantages-des-solutions-pour-rationaliser-et-renforcer-les-operations"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 5 -->
+        <article>
+          <div class="article-header">
+            <h2>Les Concepts Fondamentaux de la Sécurité Informatique</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image5.jpg" alt="Image 5" class="article-image" />
+            <p>Texte explicatif de l'article 5.</p>
+          </div>
+          <a
+            href="https://www.blogdumoderateur.com/selection-formation-cybersecurite-172/"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 6 -->
+        <article>
+          <div class="article-header">
+            <h2>Virtualisation 2023</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image6.jpg" alt="Image 6" class="article-image" />
+            <p>Texte explicatif de l'article 6.</p>
+          </div>
+          <a
+            href="https://www.lemagit.fr/essentialguide/Virtualisation-du-poste-de-travail-que-choisir-en-2023"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 7 -->
+        <article>
+          <div class="article-header">
+            <h2>Les Principes de Base de la Gestion de Projet Informatique</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image7.jpg" alt="Image 7" class="article-image" />
+            <p>Texte explicatif de l'article 7.</p>
+          </div>
+          <a
+            href="https://www.blogdumoderateur.com/selection-formation-methode-agile-52/"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 8 -->
+        <article>
+          <div class="article-header">
+            <h2>Introduction à la Programmation Orientée Objet en Java</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image8.jpg" alt="Image 8" class="article-image" />
+            <p>Texte explicatif de l'article 8.</p>
+          </div>
+          <a href="https://linuxfr.org/news/a-la-decouverte-du-langage-v"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 9 -->
+        <article>
+          <div class="article-header">
+            <h2>Les Fondements de la Sécurité des Réseaux Informatiques</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image9.jpg" alt="Image 9" class="article-image" />
+            <p>Texte explicatif de l'article 9.</p>
+          </div>
+          <a
+            href="https://itsocial.fr/enjeux-it/enjeux-securite/cybersecurite/les-trois-fondements-de-la-mise-en-oeuvre-reussie-dune-architecture-zero-trust/"
+            >Lire la suite</a
+          >
+        </article>
+
+        <!-- Article 10 -->
+        <article>
+          <div class="article-header">
+            <h2>Les Avantages de l'Open Source</h2>
+            <div class="article-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="image10.jpg" alt="Image 10" class="article-image" />
+            <p>Texte explicatif de l'article 10.</p>
+          </div>
+          <a href="https://www.lebigdata.fr/open-source-tout-savoir"
+            >Lire la suite</a
+          >
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Mon Portfolio</p>
+    </footer>
+  </body>
+</html>
