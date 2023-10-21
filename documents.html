@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Documents</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques pour la page "documents.html" */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .documents-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .documents-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .document-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .document-item:before {
+            content: "►"; /* Mini flèche à gauche de chaque lien */
+            margin-right: 10px;
+            color: #000; /* Couleur de la flèche noire */
+            font-size: 14px;
+        }
+
+        .document-link {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .document-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mes Documents</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#contactez-moi">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="documents-container">
+        <h2>DOCUMENTS</h2>
+        <ul class="documents-list">
+            <li class="document-item"><span class="document-link"><a href="docs/ficheE5.pdf">Fiche E5</a></span></li>
+            <li class="document-item"><span class="document-link"><a href="docs/grilleE5.pdf">Grille E5</a></span></li>
+            <li class="document-item"><span class="document-link"><a href="document3.pdf">Document 3</a></span></li>
+            <li class="document-item"><span class="document-link"><a href="document4.pdf">Document 4</a></span></li>
+            <li class="document-item"><span class="document-link"><a href="document5.pdf">Document 5</a></span></li>
+        </ul>
+    </div>
+</body>
+</html>
