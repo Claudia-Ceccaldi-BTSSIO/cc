@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques pour la page de parcours */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .parcours-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fleche {
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 60px solid #000; /* Couleur de la flèche noire */
+            position: relative;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .event {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+
+        .cv-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cv-link a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .cv-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Parcours Professionnel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#contactez-moi">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="parcours-container">
+        <div class="fleche"></div>
+        <div class="timeline">
+            <div class="event">
+                <h2>Année 1</h2>
+                <p>Description de l'événement 1</p>
+            </div>
+            <div class="event">
+                <h2>Année 2</h2>
+                <p>Description de l'événement 2</p>
+            </div>
+            <!-- Ajoutez autant d'événements que nécessaire -->
+        </div>
+        <div class="cv-link">
+            <a href="claudiaCV.pdf">Mon CV</a>
+        </div>
+    </div>
+</body>
+</html>
