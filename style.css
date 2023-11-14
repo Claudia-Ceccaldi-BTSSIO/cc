@@ -1,7 +1,7 @@
 /* Style général de la page */
 body {
-  background-color: #f2f2f2;
-  color: #000;
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
@@ -9,8 +9,8 @@ body {
 
 /* Menu en haut */
 .header {
-  background-color: #000;
-  color: #fff;
+  background-color: #000033; /* Bleu foncé */
+  color: #ffffff; /* Blanc */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -40,8 +40,8 @@ body {
 
 /* Style de la section "Description BTS SIO option SLAM" */
 .sio {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
@@ -52,12 +52,13 @@ body {
 .w3-text-black {
   font-size: medium;
   text-align: center;
-  color: red;
+  color: #000033; /* Bleu foncé */
 }
+
 /* Style de la section "Etablissement UFA47" - Contenu ombre */
 .ufa47-content {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
   text-align: center;
   padding: 20px;
   margin: 20px auto;
@@ -67,8 +68,8 @@ body {
 
 /* Style de la section "Contactez moi" */
 .Contact {
-  background-color: #000;
-  color: #fff;
+  background-color: #000033; /* Bleu foncé */
+  color: #ffffff; /* Blanc */
   text-align: center;
   padding: 20px;
   margin-top: 250px; /* Ajoutez une marge supérieure pour éviter la superposition */
@@ -77,8 +78,8 @@ body {
 
 /* Style de la section "Coordonnées" */
 .coordonnee {
-  background-color: #fff;
-  color: #000;
+  background-color: #ffffff; /* Blanc */
+  color: #000000; /* Noir */
   text-align: center;
   padding: 20px;
   margin: 20px auto;
@@ -101,14 +102,85 @@ body {
   text-align: center;
 }
 .img-profil {
-  height: 100px; /* Ajustez selon la taille désirée */
-  width: 100px; /* Assurez-vous que la largeur et la hauteur sont égales */
-  border-radius: 50%; /* Rend l'image circulaire */
-  border: 2px solid #000; /* Optionnel : Ajoutez une bordure, modifiez la couleur et l'épaisseur comme souhaité */
+  height: 15vh;
+  border-radius: 50%;
 }
-
 
 .feedlylogo {
   align-items: center;
-  
+}
+
+/* Styles spécifiques pour la page de parcours */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333; /* Gris foncé */
+  color: #ffffff; /* Blanc */
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #444; /* Gris */
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff; /* Blanc */
+}
+
+.parcours-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Blanc */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fleche {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 60px solid #000033; /* Bleu foncé */
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.event {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #cccccc; /* Gris clair */
+  background-color: #f2f2f2; /* Gris très clair */
+}
+
+.cv-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cv-link a {
+  text-decoration: none;
+  color: #3498db; /* Bleu */
+  font-weight: bold;
+}
+
+.cv-link a:hover {
+  text-decoration: underline;
 }
