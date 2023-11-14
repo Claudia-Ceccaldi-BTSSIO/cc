@@ -6,173 +6,193 @@
     <title>Veille Informatique - Mon Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        /* Réinitialisation de la mise en page et styles de base */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
+       /* Réinitialisation de la mise en page et styles de base */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
+/*header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}*/
+.header {
+    background-color: #000033; /* Bleu foncé */
+    color: #ffffff; /* Blanc */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
 
-        nav ul {
-            list-style-type: none;
-            background-color: #444;
-            text-align: center;
-            padding: 10px 0;
-        }
+.header a {
+    text-decoration: none;
+}
+.header a {
+    font-weight: normal; /* Pour enlever le style en gras */
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
+nav ul {
+    list-style-type: none;
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
 
-        section {
-            padding: 20px;
-        }
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        /* Styles pour le texte de votre veille informatique */
-        h1, h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+section {
+    padding: 20px;
+}
 
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-        /* Styles spécifiques pour les liens "Lire la suite" */
-        a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
 
-        /* Styles spécifiques pour les étoiles de notation */
-        .star {
-            color: #f4d03f;
-            font-size: 18px;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
-        /* Styles spécifiques pour les images des articles */
-        .article-image {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
+.star {
+    color: #f4d03f;
+    font-size: 18px;
+}
 
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
-        /* Styles pour le carousel d'articles */
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative; /* Position relative pour les boutons de navigation */
-        }
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
 
-        .carousel-container {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            justify-content: center; /* Centrer horizontalement les articles */
-        }
+/* Styles pour le carousel d'articles */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position relative pour les boutons de navigation */
+}
 
-        .article {
-            flex: 0 0 100%;
-            display: none; /* Cache tous les articles initialement */
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center; /* Centrer horizontalement les articles */
+}
 
-        /* Afficher uniquement l'article actuel */
-        .article.active {
-            display: block;
-        }
+.article {
+    flex: 0 0 100%;
+    display: none; /* Cache tous les articles initialement */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
-        .prev-button,
-        .next-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: transparent;
-            border: none;
-            font-size: 24px;
-            color: #333;
-            cursor: pointer;
-            outline: none;
-            padding: 10px;
-            z-index: 2;
-        }
+/* Afficher uniquement l'article actuel */
+.article.active {
+    display: block;
+}
 
-        .prev-button {
-            left: 0;
-        }
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    z-index: 2;
+}
 
-        .next-button {
-            right: 0;
-        }
+.prev-button {
+    left: 0;
+}
 
-        /* Styles spécifiques pour le logo Feedly */
-        .feedlylogo {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centre horizontalement le contenu */
-            margin-top: 20px; /* Espace entre le texte et le logo */
-        }
+.next-button {
+    right: 0;
+}
 
-        .feedlylogo img {
-            max-width: 50%;
-            height: auto;
-        }
+/* Styles spécifiques pour le logo Feedly */
+.feedlylogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement le contenu */
+    margin-top: 20px; /* Espace entre le texte et le logo */
+}
+
+.feedlylogo img {
+    max-width: 50%;
+    height: auto;
+}
+
     </style>
 </head>
 <body>
 <header>
     <h1>Veille Informatique</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="index.html#contactez-moi">Contact</a></li>
-        </ul>
+    <nav class="header">
+        <div class="header">
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html" width="300" height="200">Parcours</a>
+            <a href="projetIndex.html">Projets</a>
+            <a href="documents.html">Documents</a>
+            <a href="index.html#contactez-moi">Contact</a>
+          </div>
     </nav>
 </header>
 <main>
