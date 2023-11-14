@@ -4,109 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloc 1 : Support et mise à disposition de services informatiques</title>
+    <title>Bloc de Compétences : Support et mise à disposition de services informatiques</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <style>
+/* Style général de la page */
+body {
+    background-color: #f2f2f2;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu en haut */
+.header {
+  background-color: #000033; /* Bleu foncé */
+  color: #ffffff; /* Blanc */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Conteneur principal */
+.content {
+    text-align: justify;
+    padding: 20px;
+    margin-top: 70px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* Pour tous les éléments img à l'intérieur des sections .comp */
+    #comp1 img,
+    #comp2 img,
+    #comp3 img,
+    #comp4 img,
+    #comp5 img,
+    #comp6 img {
+        max-width: 100%; /* La largeur maximale des images est de 100% */
+        height: auto; /* L'hauteur est ajustée automatiquement pour préserver les proportions */
+        display: block; /* Assurez-vous que les images sont alignées au centre horizontalement */
+        margin: 0 auto; /* Centrez les images horizontalement */
+        text-align: center; /* Centrez également le texte autour de l'image si nécessaire */
+    }
+
+/* Media queries pour la mise en page responsive */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+
+    .comp1, .comp2, .comp3, .comp4, .comp5, .comp6 {
+        margin: 10px auto;
+    }
+}
+
+    </style>
 </head>
 
 <body>
-    <style>
-        /* Style général de la page */
-        body {
-            background-color: #f2f2f2;
-            color: #000;
-            font-family: "Montserrat", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Menu en haut */
-        .header {
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        .header a {
-            text-decoration: none;
-            color: #fff;
-            padding: 10px 20px;
-        }
-
-        /* Conteneur principal */
-        .content {
-            text-align: justify;
-            padding: 20px;
-            margin-top: 70px;
-        }
-
-        /* Style des documents */
-        .document {
-            background-color: #fff;
-            color: #000;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .document h2 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .document img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .document p {
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-
-        .document ul {
-            margin-left: 20px;
-        }
-
-        .document li {
-            margin-bottom: 5px;
-        }
-
-        .document a {
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            background-color: #000;
-            color: #fff;
-            padding: 10px;
-            margin-top: 10px;
-        }
-
-        /* Pied de page */
-        .footer {
-            height: 100px;
-        }
-    </style>
-    <div class="header">
-        <a href="index.html">Accueil</a>
-        <a href="documents.html">Documents</a>
-        <a href="bloc2.html">Bloc 2</a>
-        <a href="bloc3.html">Bloc 3</a>
-        <a href="index.html#contactez-moi">Contact</a>
-    </div>
-
+    <nav class="header">
+        <div class="header">
+            <a href="parcours.html" width="300" height="200">Parcours</a>
+            <a href="projetIndex.html">Projets</a>
+            <a href="veille.html">Veille</a>
+            <a href="documents.html">Documents</a>
+            <a href="index.html#contactez-moi">Contact</a>
+        </div>
+    </nav>
     <div class="content">
-        <div class="document">
-            <h2>Gérer le patrimoine informatique</h2>
+        <div id="comp1">
+            <h2 >Gérer le patrimoine informatique</h2>
             <img src="images/g@ci.jpg" alt="Document 1">
             <p>
                 Gérer un patrimoine informatique fait partie du bloc 1 de compétences à acquérir lors du BTS SIO. J'ai pu acquérir cette compétence dans le cadre de missions remplies au sein de mon entreprise.
@@ -139,7 +121,7 @@
             <a href="document1.pdf">lien</a>
         </div>
 
-        <div class="document">
+        <div id="comp2">
             <h2>Répondre aux incidents et aux demandes d’assistance et d’évolution</h2>
             <img src="images/hotline.jpg" alt="Document 2">
             <p>
@@ -159,7 +141,7 @@
             <a href="document2.pdf">lien</a>
         </div>
 
-        <div class="document">
+        <div id="comp3">
             <h2>Développement de la présence en ligne de l’organisation</h2>
             <img src="images/prenligne.jpg" alt="Document 3">
             <p>
@@ -185,7 +167,7 @@
             <a href="document3.pdf">lien</a>
         </div>
 
-        <div class="document">
+        <div id="comp4">
             <h2>Travail en mode projet</h2>
             <img src="images/modeprojet.jpg" alt="Document 3">
             <p>
@@ -205,7 +187,7 @@
             <a href="document4.pdf">lien</a>
         </div>
 
-        <div class="document">
+        <div id="comp5">
             <h2>Mise à disposition des utilisateurs d’un service informatique</h2>
             <img src="images/outilnum.png" alt="Document 4">
             <p>
@@ -225,7 +207,7 @@
             <a href="document5.pdf">lien</a>
         </div>
 
-        <div class="document">
+        <div id="comp6">
             <h2>Organisation de son développement professionnel</h2>
             <img src="images/veille.jpg" alt="Document 5">
             <p>
