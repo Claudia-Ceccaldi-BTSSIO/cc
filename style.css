@@ -101,9 +101,12 @@ body {
   text-align: center;
 }
 .img-profil {
-  height: 15vh;
-  border-radius: 50%;
+  height: 100px; /* Ajustez selon la taille désirée */
+  width: 100px; /* Assurez-vous que la largeur et la hauteur sont égales */
+  border-radius: 50%; /* Rend l'image circulaire */
+  border: 2px solid #000; /* Optionnel : Ajoutez une bordure, modifiez la couleur et l'épaisseur comme souhaité */
 }
+
 
 .feedlylogo {
   align-items: center;
