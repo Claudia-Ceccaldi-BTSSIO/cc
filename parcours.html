@@ -5,111 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Parcours Professionnel</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Styles spécifiques pour la page de parcours */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            background-color: #444;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .parcours-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .fleche {
-            width: 0;
-            height: 0;
-            border-top: 40px solid transparent;
-            border-bottom: 40px solid transparent;
-            border-left: 60px solid #000; /* Couleur de la flèche noire */
-            position: relative;
-        }
-
-        .timeline {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .event {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #f2f2f2;
-        }
-
-        .cv-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .cv-link a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
-
-        .cv-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Mon Parcours Professionnel</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html#contactez-moi">Contact</a></li>
-            </ul>
+        <nav class="header">
+            <div class="header">
+                <a href="index.html" width="300" height="200">Accueil</a>
+                <a href="projetIndex.html">Projets</a>
+                <a href="veille.html">Veille</a>
+                <a href="documents.html">Documents</a>
+                <a href="index.html#contactez-moi">Contact</a>
+              </div>
         </nav>
     </header>
     <div class="parcours-container">
-        <div class="fleche"></div>
-        <div class="timeline">
-            <div class="event">
-                <h2>Année 1</h2>
-                <p>Description de l'événement 1</p>
-            </div>
-            <div class="event">
-                <h2>Année 2</h2>
-                <p>Description de l'événement 2</p>
-            </div>
-            <!-- Ajoutez autant d'événements que nécessaire -->
-        </div>
-        <div class="cv-link">
-            <a href="claudiaCV.pdf">Mon CV</a>
-        </div>
+            <img src="images/cv.jpg" alt="Mon CV" width="350" height="350"> 
+            <p><strong>MON CV</strong></p>
+            <a href="CV2023.pdf" target="_blank" download>
+               
+             <img src="images/doigt.jpg" alt="Doigt" width="20" height="20">
+                N'hésitez pas, téléchargez moi !
+            </a>
+        </p>
+    </div>
+    
+        
+            
+               
     </div>
 </body>
 </html>
